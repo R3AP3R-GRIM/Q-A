@@ -1,15 +1,6 @@
 import streamlit as st
-from transformers import pipeline
-import easyocr
-import os
-import spacy
-from spacy.lang.en.stop_words import STOP_WORDS
-from string import punctuation
 from transformers import LongformerTokenizer, LongformerForQuestionAnswering
 from transformers import LongformerTokenizerFast
-import torch
-import streamlit as st
-from PIL import Image
 from streamlit_option_menu import option_menu
 text=st.text_area('Context',height=350)
 question = st.text_input('Questions?')
