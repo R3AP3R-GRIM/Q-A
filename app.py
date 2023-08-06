@@ -12,8 +12,8 @@ import streamlit as st
 from PIL import Image
 from streamlit_option_menu import option_menu
 
-text=st.text_area('Context',height=350)
-question = st.text_input('Questions?')
+    text=st.text_area('Context',height=350)
+    question = st.text_input('Questions?')
     if(st.button('Submit')):
         def longformer(text, question):
             encoding = tokenizer.encode_plus(question, text, return_tensors="pt")
