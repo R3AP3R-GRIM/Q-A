@@ -22,7 +22,7 @@ if(st.button('Submit')):
         all_tokens = tokenizer.convert_ids_to_tokens(input_ids[0].tolist())
         answer_tokens = all_tokens[torch.argmax(start_scores):torch.argmax(end_scores)+1]
         answer = tokenizer.decode(tokenizer.convert_tokens_to_ids(answer_tokens))
-    return answer
+        return answer
     ans= (longformer(text, question))
     st.subheader('Question-')
     st.write('Q.' + question)
