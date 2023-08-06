@@ -1,7 +1,6 @@
 import streamlit as st
 from transformers import pipeline
 
-@st.cache(allow_output_mutation=True)
 def load_qa_model():
     model = pipeline("question-answering")
     return model
