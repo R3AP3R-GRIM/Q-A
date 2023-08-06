@@ -1,6 +1,5 @@
 import streamlit as st
 from transformers import LongformerTokenizer, LongformerForQuestionAnswering
-from transformers import LongformerTokenizerFast
 from streamlit_option_menu import option_menu
 text=st.text_area('Context',height=350)
 question = st.text_input('Questions?')
