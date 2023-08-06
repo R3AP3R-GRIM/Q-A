@@ -1,6 +1,6 @@
 import streamlit as st
 from transformers import LongformerForQuestionAnswering
-from streamlit_option_menu import option_menu
+
 text=st.text_area('Context',height=350)
 question = st.text_input('Questions?')
 if(st.button('Submit')):
